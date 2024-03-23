@@ -27,6 +27,7 @@ model Article {
 
 model User {
   id        Int       @id @default(autoincrement())
+  isAdmin   Boolean   @default(false)
   name      String?
   lastName  String?
   username  String
